@@ -29,8 +29,7 @@ A simplified version of Splitwise that helps people track shared expenses and fi
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Shrinivas5/Splitwise-Clone
-    cd FS
+    git clone https://github.com/KavinKumar444/Splitwise-Clone.git
     ```
 2.  **Start the application:**
     ```bash
@@ -54,8 +53,6 @@ A simplified version of Splitwise that helps people track shared expenses and fi
     ```bash
     python -m venv venv
     # On Windows
-    .\venv\Scripts\activate
-    # On macOS/Linux
     source venv/bin/activate
     ```
 3.  **Install backend dependencies:**
@@ -64,7 +61,7 @@ A simplified version of Splitwise that helps people track shared expenses and fi
     ```
 4.  **Run the Backend API:**
     ```bash
-    uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+    uvicorn app.main:app --reload 
     ```
     The Backend API will be available at [http://localhost:8000](http://localhost:8000).
     API Documentation (Swagger UI): [http://localhost:8000/docs](http://localhost:8000/docs)
