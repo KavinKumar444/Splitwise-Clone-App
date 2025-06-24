@@ -29,7 +29,7 @@ A simplified version of Splitwise that helps people track shared expenses and fi
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/KavinKumar444/Splitwise-Clone.git
+    git clone https://github.com/KavinKumar444/Splitwise-Clone-App.git
     ```
 2.  **Start the application:**
     ```bash
