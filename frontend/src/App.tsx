@@ -4,6 +4,9 @@ import { Home } from './pages/Home';
 import { Groups } from './pages/Groups';
 import { GroupDetails } from './pages/GroupDetails';
 import { UserBalances } from './pages/UserBalances';
+import ChatBot from './pages/ChatBot';
+
+
 
 function App() {
   return (
@@ -35,6 +38,13 @@ function App() {
                   >
                     Balances
                   </Link>
+                  <Link
+                    to="/chat"
+                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    ChatBot
+                  </Link>
+
                 </div>
               </div>
             </div>
@@ -47,6 +57,7 @@ function App() {
             <Route path="/groups" element={<Groups />} />
             <Route path="/groups/:groupId" element={<GroupDetails />} />
             <Route path="/balances" element={<UserBalances />} />
+            <Route path="/chat" element={<ChatBot />} />
           </Routes>
         </main>
       </div>

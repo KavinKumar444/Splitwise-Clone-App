@@ -3,6 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.routes import groups, expenses, users, balances
 from app.database import engine
 from app.models import models
+from app.chatbot import router as chatbot_router
+
+
 
 # Create database tables
 models.Base.metadata.create_all(bind=engine)
@@ -23,6 +26,7 @@ app.include_router(users.router, prefix="/users", tags=["users"])
 app.include_router(groups.router, prefix="/groups", tags=["groups"])
 app.include_router(expenses.router, prefix="/expenses", tags=["expenses"])
 app.include_router(balances.router, prefix="/balances", tags=["balances"])
+app.include_router(chatbot_router)
 
 @app.get("/")
 def read_root():
